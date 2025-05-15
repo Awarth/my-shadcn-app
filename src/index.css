@@ -93,3 +93,7 @@
     @apply tw-bg-background tw-text-foreground;
   }
 }
+
+#doc-card {
+  scrollbar-width: none;
+}

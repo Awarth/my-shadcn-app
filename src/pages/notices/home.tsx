@@ -3,7 +3,13 @@ import { useTranslation } from 'react-i18next';
 import { Search } from 'lucide-react';
 import NoticeCard from '@/components/custom/notice card/index';
 import NoticeCardSkeleton from '@/components/custom/notice card/skeleton';
-import ProfileCard from '@/components/custom/ProfileWrapper';
+import ProfileWrapper from '@/components/custom/ProfileWrapper';
+import Daily from '@/components/custom/curriculum updates card/daily/index';
+import Portion from '@/components/custom/curriculum updates card/portion';
+import Weekly from '@/components/custom/curriculum updates card/weekly/index';
+import { DailySkeleton } from '@/components/custom/curriculum updates card/daily/skeleton';
+import { PortionSkeleton } from '@/components/custom/curriculum updates card/portion/skeleton';
+import { WeeklySkeleton } from '@/components/custom/curriculum updates card/weekly/skeleton';
 
 function NoticeListingPage() {
   const { t } = useTranslation('notice_listing');
@@ -22,7 +28,15 @@ function NoticeListingPage() {
         </div>
       </div>
       <div className="tw-flex tw-flex-col tw-w-full tw-h-full tw-p-4 tw-gap-3">
-        <ProfileCard name="Adarsh" avatarUrl="" section="" roll="" dateRange="" />
+        <NoticeCard />
+        <NoticeCardSkeleton />
+        <ProfileWrapper />
+        <Daily />
+        <DailySkeleton />
+        <Portion />
+        <PortionSkeleton />
+        <Weekly />
+        <WeeklySkeleton />
       </div>
     </div>
   );

@@ -6,14 +6,14 @@ import { Skeleton } from '@/components/ui/skeleton';
 import profile from '../../../public/images/profile.png';
 
 export default function ProfileWrapper({
-  children,
+  children = <></>,
   name = 'Adarsh Tiwari',
   classSection = '10-B',
   studentId = 'GD14',
   profileImage = profile,
   isLoading = false,
 }: {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   name?: string;
   classSection?: string;
   studentId?: string;
@@ -55,8 +55,9 @@ export default function ProfileWrapper({
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.4 }}
+        className="tw-pt-12"
       >
-        <Card className="tw-bg-blue-500 !tw-rounded-3xl tw-relative tw-pb-5 tw-pt-16 tw-px-5 tw-flex tw-flex-col tw-items-center tw-shadow-xl tw-overflow-visible">
+        <Card className="!tw-bg-blue-500 !tw-rounded-3xl tw-relative tw-pb-5 tw-pt-16 tw-px-5 tw-flex tw-flex-col tw-items-center tw-shadow-xl tw-overflow-visible">
           {/* Profile Image with Lazy Loading */}
           <div className="tw-absolute tw--top-12 tw-left-1/2 tw--translate-x-1/2 tw-z-10">
             {showSkeleton ? (
@@ -90,15 +91,13 @@ export default function ProfileWrapper({
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.3, delay: 0.1 }}
               >
-                <h2 className="tw-text-white tw-font-medium tw-text-2xl tw-mb-2">
-                  {name}
-                </h2>
+                <h2 className="tw-text-white tw-font-medium tw-text-2xl tw-mb-2">{name}</h2>
 
                 <div className="tw-flex tw-items-center tw-justify-center tw-gap-2 tw-mb-4">
-                  <Badge className="tw-bg-white/80 tw-text-blue-500 !tw-rounded-full tw-px-3 tw-py-1 tw-text-xs tw-font-medium tw-shadow-none">
+                  <Badge className="tw-bg-white/80 !tw-text-blue-500 !tw-rounded-full tw-px-3 tw-py-1 tw-text-xs tw-font-medium tw-shadow-none">
                     {classSection}
                   </Badge>
-                  <Badge className="tw-bg-white/80 tw-text-blue-500 !tw-rounded-full tw-px-3 tw-py-1 tw-text-xs tw-font-medium tw-shadow-none">
+                  <Badge className="tw-bg-white/80 !tw-text-blue-500 !tw-rounded-full tw-px-3 tw-py-1 tw-text-xs tw-font-medium tw-shadow-none">
                     {studentId}
                   </Badge>
                 </div>

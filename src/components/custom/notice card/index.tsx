@@ -11,11 +11,11 @@ import { Badge } from '@/components/ui/badge';
 
 function NoticeCard() {
   return (
-    <Card className="tw-w-full tw-px-5 tw-py-4 tw-rounded-3xl tw-text-primary/70">
+    <Card className="tw-w-full tw-px-5 tw-py-4 !tw-rounded-3xl tw-text-primary/70">
       <div className="tw-flex tw-items-center tw-justify-between tw-gap-2 tw-mb-2">
         <Badge
           variant="secondary"
-          className="!tw-rounded-full !tw-px-3 !tw-py-1 tw-text-xs tw-font-medium tw-text-[#544DDB] tw-bg-[#544DDB]/10"
+          className="!tw-rounded-full !tw-px-3 !tw-py-1 tw-text-xs tw-font-medium !tw-text-[#544DDB] !tw-bg-[#544DDB]/10"
         >
           Adarsh
         </Badge>
@@ -28,13 +28,13 @@ function NoticeCard() {
           <span className="tw-w-fit">
             <Badge
               variant="secondary"
-              className="!tw-rounded-full !tw-px-3 !tw-py-1 tw-text-xs tw-font-medium tw-text-[#544DDB] tw-bg-[#544DDB]/10"
+              className="!tw-rounded-full !tw-px-3 !tw-py-1 tw-text-xs tw-font-medium !tw-text-[#544DDB] !tw-bg-[#544DDB]/10"
             >
               Yes
             </Badge>{' '}
             <Badge
               variant="secondary"
-              className="!tw-rounded-full !tw-px-3 !tw-py-1 tw-text-xs tw-font-medium tw-text-[#544DDB] tw-bg-[#544DDB]/10"
+              className="!tw-rounded-full !tw-px-3 !tw-py-1 tw-text-xs tw-font-medium !tw-text-[#544DDB] !tw-bg-[#544DDB]/10"
             >
               Submit Entry
             </Badge>

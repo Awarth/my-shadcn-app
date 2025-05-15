@@ -10,7 +10,7 @@ function NoticeCardSkeleton() {
   };
 
   return (
-    <Card className="tw-w-full tw-px-5 tw-py-4 tw-rounded-3xl">
+    <Card className="tw-w-full tw-px-5 tw-py-4 !tw-rounded-3xl">
       <div className="tw-flex tw-items-center tw-justify-between tw-gap-2 tw-mb-2">
         <motion.div {...breathe} className="tw-h-6 tw-w-14 tw-bg-gray-300/40 tw-rounded-full" />
         <motion.div {...breathe} className="tw-h-5 tw-w-5 tw-bg-gray-300/40 tw-rounded-full" />
