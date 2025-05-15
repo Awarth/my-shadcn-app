@@ -59,7 +59,7 @@ export default function ProfileWrapper({
       >
         <Card className="!tw-bg-blue-500 !tw-rounded-3xl tw-relative tw-pb-5 tw-pt-16 tw-px-5 tw-flex tw-flex-col tw-items-center tw-shadow-xl tw-overflow-visible">
           {/* Profile Image with Lazy Loading */}
-          <div className="tw-absolute tw--top-12 tw-left-1/2 tw--translate-x-1/2 tw-z-10">
+          <div className="tw-absolute tw--top-10 tw-left-1/2 tw--translate-x-1/2 tw-z-10">
             {showSkeleton ? (
               <div className="tw-w-24 tw-h-24 tw-rounded-3xl tw-shadow-lg tw-border-[3px] tw-border-white tw-overflow-hidden">
                 <Skeleton className="tw-w-full tw-h-full" />
